@@ -1,0 +1,142 @@
+html, body, header, footer, hgroup, nav, article, section, figure,
+figcaption, h1, h2, h3, ul, li, body, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+fieldset{
+    width: 300px;
+    margin: auto;
+}
+form.board_game {
+    display: block;
+    text-align: center;
+    z-index: -100;
+
+}
+div.print-only {
+    display: none;
+}
+
+@media print {
+    div.print-only {
+        justify-content: center;
+        display: block;
+    }
+
+    .no-print {
+        display: none;
+    }
+
+}
+
+.playercards{
+    font-family: "Times", Serif;
+    text-align: center;
+}
+
+.playerbuttons{
+    margin: 2em auto 5em 0;
+}
+h3.player{
+    text-align: center;
+}
+div.inline-cards{
+    margin: 0.5em;
+    display: inline;
+    float: left;
+}
+p.card-header{
+    font-family: "Times", Serif;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em;
+}
+/*div.board{
+
+}*/
+p.center{
+    text-align: center;
+    align-items: center;
+    width: 1025px;
+}
+div.game {
+    display: inline-block;
+    position: relative;
+    margin: 1em auto;
+    width: 96vw;
+    height: 96vw;
+    max-width: 1000px;
+    max-height: 1000px;
+    border: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+    background-image: url('images/board.jpg');
+    background-size: 100% 100%;
+}
+
+div.game > div.board {
+    display: flex;
+    flex-direction: column;
+    margin: 2.2% 0 0 5.5%;
+    width: 90.5%;
+    height: 93.1%;
+}
+div.game div.row {
+    display: flex;
+    flex: 1 1 auto;
+    padding: 0;
+    width: 100%;
+    height: 4%;
+    min-height: 4%;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+div.game div.cell {
+    flex: 1 0 4.16%;
+    vertical-align: top;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid red;
+}
+div figcaption{
+    font-family: "Times", Serif;
+    text-align: center;
+}
+div.content{
+    position: absolute;
+    left: 43.2%;
+    top: 39.2%;
+    width: 18.2%;
+    height: 25.5%;
+
+    background: url('images/statue_w.jpg');
+    overflow-y: auto;
+    z-index: 100;
+    border: 5px solid #212a2c;
+}
+
+
+#dice {
+    text-align: center;
+    padding: 100px 5px 0 5px;
+}
+
+div.cell button {
+    border: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00ff0033;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
